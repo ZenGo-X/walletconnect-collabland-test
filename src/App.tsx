@@ -23,6 +23,7 @@ import { IAssetData } from "./helpers/types";
 import Banner from "./components/Banner";
 import AccountAssets from "./components/AccountAssets";
 import { eip712 } from "./helpers/eip712";
+import { eip712malformed1 } from "./helpers/eip712malformed1";
 
 const SLayout = styled.div`
   position: relative;
@@ -530,21 +531,17 @@ class App extends React.Component<any, any> {
     }
   };
 
-  public testPersonalSignMessage = async () => {
+  public collabMalformed = async () => {
     const { connector, address, chainId } = this.state;
 
     if (!connector) {
       return;
     }
 
-    // test message
-    const message = `My email is john@doe.com - ${new Date().toUTCString()}`;
+    const message = JSON.stringify(eip712malformed1.example);
 
-    // encode message (hex)
-    const hexMsg = convertUtf8ToHex(message);
-
-    // eth_sign params
-    const msgParams = [hexMsg, address];
+    // eth_signTypedData params
+    const msgParams = [address, message];
 
     try {
       // open modal
@@ -553,16 +550,16 @@ class App extends React.Component<any, any> {
       // toggle pending request indicator
       this.setState({ pendingRequest: true });
 
-      // send message
-      const result = await connector.signPersonalMessage(msgParams);
+      // sign typed data
+      const result = await connector.signTypedData(msgParams);
 
       // verify signature
-      const hash = hashMessage(message);
+      const hash = hashTypedDataMessage(message);
       const valid = await verifySignature(address, result, hash, chainId);
 
       // format displayed result
       const formattedResult = {
-        method: "personal_sign",
+        method: "eth_signTypedData",
         address,
         valid,
         result,
@@ -580,13 +577,15 @@ class App extends React.Component<any, any> {
     }
   };
 
-  public testSignTypedData = async () => {
+  public collabLegit = async () => {
     const { connector, address, chainId } = this.state;
 
     if (!connector) {
       return;
     }
-
+    /* tslint:disable:no-string-literal */
+    connector.clientMeta['name'] = 'Collab.Land Connect';
+    connector.clientMeta['url'] = "https://collab.land";
     const message = JSON.stringify(eip712.example);
 
     // eth_signTypedData params
@@ -672,8 +671,8 @@ class App extends React.Component<any, any> {
                     <STestButton left onClick={this.testSignTransaction}>
                       {"eth_signTransaction"}
                     </STestButton>
-                    <STestButton left onClick={this.testSignTypedData}>
-                      {"eth_signTypedData"}
+                    <STestButton left onClick={this.collabLegit}>
+                      {"Collab Legit"}
                     </STestButton>
                     <STestButton left onClick={this.testLegacySignMessage}>
                       {"eth_sign (legacy)"}
@@ -681,8 +680,8 @@ class App extends React.Component<any, any> {
                     <STestButton left onClick={this.testStandardSignMessage}>
                       {"eth_sign (standard)"}
                     </STestButton>
-                    <STestButton left onClick={this.testPersonalSignMessage}>
-                      {"personal_sign"}
+                    <STestButton left onClick={this.collabMalformed}>
+                      {"Collab malformed"}
                     </STestButton>
                   </STestButtonContainer>
                 </Column>

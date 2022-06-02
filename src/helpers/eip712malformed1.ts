@@ -3,7 +3,7 @@ const example =
           domain: {
               chainId: 1,
               name: "Collab.Land Connect",
-              verifyingContract: "0xCcCCccccCCCCcCCCCCCcCcCccCcCCCcCcccccccC",
+              verifyingContract: "0xBBBbbBBBBBBBbBBBBBBBbbbb",
               version: "1"
           },
           primaryType: "Verify",
@@ -38,6 +38,6 @@ const example =
           }
       };
 
-export const eip712 = {
+export const eip712malformed1 = {
   example,
 };
