@@ -10,7 +10,6 @@
     "crypto"
   ],
   "author": "WalletConnect, Inc. <walletconnect.com>",
-  "homepage": "https://walletconnect.org",
   "license": "MIT",
   "scripts": {
     "predeploy" : "npm run build",
@@ -23,10 +22,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/walletconnect/walletconnect-example-dapp.git"
+    "url": "git+https://github.com/ZenGo-X/walletconnect-collabland-test.git"
   },
   "bugs": {
-    "url": "https://github.com/walletconnect/walletconnect-example-dapp/issues"
+    "url": "https://github.com/ZenGo-X/walletconnect-collabland-test.git/issues"
   },
   "dependencies": {
     "@types/eth-sig-util": "^2.1.1",
