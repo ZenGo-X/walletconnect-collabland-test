@@ -1,15 +1,15 @@
 {
-  "main.js": "/static/js/main.38610864.chunk.js",
-  "main.js.map": "/static/js/main.38610864.chunk.js.map",
-  "static/js/1.e9aa1dfc.chunk.js": "/static/js/1.e9aa1dfc.chunk.js",
-  "static/js/1.e9aa1dfc.chunk.js.map": "/static/js/1.e9aa1dfc.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
-  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/media/collabland-banner.png": "/static/media/collabland-banner.1e7d6a7f.png",
-  "static/media/erc20.svg": "/static/media/erc20.90607899.svg",
-  "static/media/eth.svg": "/static/media/eth.42bca731.svg",
-  "static/media/xdai.png": "/static/media/xdai.e37299a8.png",
-  "index.html": "/index.html",
-  "precache-manifest.85ce638a402931c11553b6d291c9f7e9.js": "/precache-manifest.85ce638a402931c11553b6d291c9f7e9.js",
-  "service-worker.js": "/service-worker.js"
+  "main.js": "/walletconnect-collabland-test/static/js/main.4c273a50.chunk.js",
+  "main.js.map": "/walletconnect-collabland-test/static/js/main.4c273a50.chunk.js.map",
+  "static/js/1.897577b5.chunk.js": "/walletconnect-collabland-test/static/js/1.897577b5.chunk.js",
+  "static/js/1.897577b5.chunk.js.map": "/walletconnect-collabland-test/static/js/1.897577b5.chunk.js.map",
+  "runtime~main.js": "/walletconnect-collabland-test/static/js/runtime~main.ddd1ff5e.js",
+  "runtime~main.js.map": "/walletconnect-collabland-test/static/js/runtime~main.ddd1ff5e.js.map",
+  "static/media/collabland-banner.png": "/walletconnect-collabland-test/static/media/collabland-banner.1e7d6a7f.png",
+  "static/media/erc20.svg": "/walletconnect-collabland-test/static/media/erc20.90607899.svg",
+  "static/media/eth.svg": "/walletconnect-collabland-test/static/media/eth.42bca731.svg",
+  "static/media/xdai.png": "/walletconnect-collabland-test/static/media/xdai.e37299a8.png",
+  "index.html": "/walletconnect-collabland-test/index.html",
+  "precache-manifest.0719b92036768e9abb948e6ec94ce596.js": "/walletconnect-collabland-test/precache-manifest.0719b92036768e9abb948e6ec94ce596.js",
+  "service-worker.js": "/walletconnect-collabland-test/service-worker.js"
 }
