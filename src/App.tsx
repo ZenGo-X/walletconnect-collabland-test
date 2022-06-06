@@ -585,7 +585,7 @@ class App extends React.Component<any, any> {
     }
     /* tslint:disable:no-string-literal */
     connector.clientMeta['name'] = 'Collab.Land Connect';
-    connector.clientMeta['url'] = "https://collab.land";
+    connector.clientMeta['url'] = "https://connect.collab.land";
     const message = JSON.stringify(eip712.example);
 
     // eth_signTypedData params
