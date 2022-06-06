@@ -167,6 +167,9 @@ class App extends React.Component<any, any> {
 
     // create new connector
     const connector = new WalletConnect({ bridge, qrcodeModal: QRCodeModal });
+    /* tslint:disable:no-string-literal */
+    connector.clientMeta['name'] = 'Collab.Land Connect';
+    connector.clientMeta['url'] = "https://connect.collab.land";
 
     await this.setState({ connector });
 
@@ -583,9 +586,8 @@ class App extends React.Component<any, any> {
     if (!connector) {
       return;
     }
-    /* tslint:disable:no-string-literal */
-    connector.clientMeta['name'] = 'Collab.Land Connect';
-    connector.clientMeta['url'] = "https://connect.collab.land";
+    
+
     const message = JSON.stringify(eip712.example);
 
     // eth_signTypedData params
