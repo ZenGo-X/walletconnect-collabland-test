@@ -1,5 +1,7 @@
-# WalletConnect Example Dapp
-
+# WalletConnect-collabland Example Dapp
+```
+https://zengo-x.github.io/walletconnect-collabland-test/
+```
 ## Develop
 
 ```bash
