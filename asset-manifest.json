@@ -1,8 +1,8 @@
 {
-  "main.js": "/walletconnect-collabland-test/static/js/main.aa6e00f4.chunk.js",
-  "main.js.map": "/walletconnect-collabland-test/static/js/main.aa6e00f4.chunk.js.map",
-  "static/js/1.897577b5.chunk.js": "/walletconnect-collabland-test/static/js/1.897577b5.chunk.js",
-  "static/js/1.897577b5.chunk.js.map": "/walletconnect-collabland-test/static/js/1.897577b5.chunk.js.map",
+  "main.js": "/walletconnect-collabland-test/static/js/main.51a14206.chunk.js",
+  "main.js.map": "/walletconnect-collabland-test/static/js/main.51a14206.chunk.js.map",
+  "static/js/1.e8250153.chunk.js": "/walletconnect-collabland-test/static/js/1.e8250153.chunk.js",
+  "static/js/1.e8250153.chunk.js.map": "/walletconnect-collabland-test/static/js/1.e8250153.chunk.js.map",
   "runtime~main.js": "/walletconnect-collabland-test/static/js/runtime~main.ddd1ff5e.js",
   "runtime~main.js.map": "/walletconnect-collabland-test/static/js/runtime~main.ddd1ff5e.js.map",
   "static/media/collabland-banner.png": "/walletconnect-collabland-test/static/media/collabland-banner.1e7d6a7f.png",
@@ -10,6 +10,6 @@
   "static/media/eth.svg": "/walletconnect-collabland-test/static/media/eth.42bca731.svg",
   "static/media/xdai.png": "/walletconnect-collabland-test/static/media/xdai.e37299a8.png",
   "index.html": "/walletconnect-collabland-test/index.html",
-  "precache-manifest.2bf3348788716e38849b3f08e2f4e17d.js": "/walletconnect-collabland-test/precache-manifest.2bf3348788716e38849b3f08e2f4e17d.js",
+  "precache-manifest.5af2c74bd25254ca0e72879479d5a568.js": "/walletconnect-collabland-test/precache-manifest.5af2c74bd25254ca0e72879479d5a568.js",
   "service-worker.js": "/walletconnect-collabland-test/service-worker.js"
 }
